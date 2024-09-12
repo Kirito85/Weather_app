@@ -1,0 +1,110 @@
+/* Загальні стилі для сторінки */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: hsl(208, 100%, 97%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+
+
+/* Стилі для картки з інформацією про погоду */
+.card {
+    background: linear-gradient(180deg, rgba(0, 0, 255, 0.5), rgba(128, 0, 128, 0.5));
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    min-width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+p{
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+
+.citydisplay {
+    font-size: 32px;
+    color: #1e90ff;
+}
+
+.tempDisplay {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff4500;
+    margin: 10px 0;
+}
+
+.humidityDisplay, .descDisplay {
+    font-size: 18px;
+    color: #696969;
+    margin: 5px 0;
+}
+
+.WeatherEmoji {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.errorDisplay {
+    background-color: #f8d7da; /* Светло-красный фон */
+    color: #721c24; /* Тёмно-красный текст */
+    border: 1px solid #f5c6cb; /* Тонкая граница светло-красного цвета */
+    border-radius: 4px; /* Скругление углов */
+    padding: 10px; /* Внутренние отступы */
+    margin: 10px 0; /* Внешние отступы сверху и снизу */
+    font-size: 16px; /* Размер шрифта */
+    text-align: center; /* Выравнивание текста по центру */
+    max-width: 100%; /* Максимальная ширина 100% от родительского элемента */
+    box-sizing: border-box; /* Включает границу и внутренние отступы в ширину элемента */
+}
+
+
+
+/* Стилі для форми */
+.weatherForm {
+    margin: 20px;
+    
+}
+
+/* Стилі для вводу і кнопки */
+.weatherForm input, .weatherForm button {
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #1e90ff;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.weatherForm input {
+    width: 200px;
+    border-radius: 5px 0 0 5px;
+}
+
+.weatherForm button {
+    background-color: #1e90ff;
+    color: white;
+    border-left: none; /* Видаляємо ліву межу для плавного переходу між інпутом і кнопкою */
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.weatherForm button:hover {
+    background-color: #4682b4;
+}
